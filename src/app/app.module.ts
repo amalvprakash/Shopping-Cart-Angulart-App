@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AddProductsComponent } from './add-products/add-products.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewProductsComponent } from './view-products/view-products.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -15,13 +16,18 @@ const myRoute:Routes=[
   {
     path:"view",
     component:ViewProductsComponent
+  },
+  {
+    path:"navbar",
+    component:NavbarComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     AddProductsComponent,
-    ViewProductsComponent
+    ViewProductsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
